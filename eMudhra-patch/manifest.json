@@ -1,0 +1,45 @@
+{
+  "title": {
+    "zh": "eMudhra 证书吊销补丁集",
+    "en": "eMudhra certificate revocation patchset",
+    "ja": "eMudhra 証明書失効パッチ集",
+    "ru": "Набор патчей отзыва сертификатов eMudhra",
+    "tr": "eMudhra sertifika iptal yama seti"
+  },
+  "description": {
+    "zh": "删除对 eMudhra 的根证书信任",
+    "en": "Remove trust in the eMudhra root certificates",
+    "ja": "eMudhra のルート証明書の信頼を削除する",
+    "ru": "Удаляет доверие к корневым сертификатам eMudhra",
+    "tr": "eMudhra kök sertifikalarına duyulan güveni kaldırır"
+  },
+  "author": "AmeChanRain",
+  "author_url": "https://github.com/AmeChanRain",
+  "recommend": true,
+  "patches": [
+    {
+      "file": "0001-system-ca-certificates-emSign-ECC-Root-CA-G3.patch",
+      "project": "system/ca-certificates"
+    },
+    {
+      "file": "0002-system-ca-certificates-emSign-Root-CA-C1.patch",
+      "project": "system/ca-certificates"
+    },
+    {
+      "file": "0003-system-ca-certificates-emSign-ECC-Root-CA-C3.patch",
+      "project": "system/ca-certificates"
+    },
+    {
+      "file": "0004-external-conscrypt-emSign-ECC-Root-CA-G3.patch",
+      "project": "external/conscrypt"
+    },
+    {
+      "file": "0005-external-conscrypt-emSign-Root-CA-C1.patch",
+      "project": "external/conscrypt"
+    },
+    {
+      "file": "0006-external-conscrypt-emSign-ECC-Root-CA-C3.patch",
+      "project": "external/conscrypt"
+    }
+  ]
+}
